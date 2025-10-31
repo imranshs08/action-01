@@ -6,11 +6,10 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@master
             - name: Welcome Mesaag
               run: echo "My first Github Actions Job"
             - name: List files
               run: ls
-            - name: Clone Repo 
-              run:  git clone https://github.dev/imranshs08/action-01.git
             - name: Read File
               run: cat README.md
